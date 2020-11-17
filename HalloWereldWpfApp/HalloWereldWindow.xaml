@@ -1,0 +1,27 @@
+﻿<Window x:Class="HalloWereldWpfApp.HalloWereldWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HalloWereldWpfApp"
+        mc:Ignorable="d"
+        Title="Hallo wereld" Height="150" Width="525">
+    <Grid>
+        <TextBox x:Name="NaamTextBox" HorizontalAlignment="Left" Height="37" Margin="10,10,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="184"/>
+        <Button x:Name="GroetButton" Content="Groet" HorizontalAlignment="Left" Margin="209,19,0,0" VerticalAlignment="Top" Click="GroetButton_Click"/>
+        <Label x:Name="BoodschapLabel" Content="Hallo wereld" HorizontalAlignment="Left" Margin="262,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="96">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <RadioButton x:Name="NederlandsRadioButton" Content="Nederlands" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="EngelsRadioButton" Content="Engels" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="HoofdlettersCheckBox" Content="Hoofdletters" HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
